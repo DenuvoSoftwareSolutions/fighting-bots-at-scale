@@ -1,0 +1,85 @@
+title: "Fighting Bots at Scale: Identifying Bottlenecks & Best Practice"
+author:
+  name: "Unbotify Team @ Denuvo"
+bio: "Denuvo by Irdeto's Unbotify Team is located in Salzburg, Austria. Its mission is to detect botting attempts and provide evidence for best-in-class anti-cheat solutions employed by global gaming customers."
+remote_theme: jekyll/minima@v2.5.2
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/unbotify1.jpg
+  -
+    scope:
+      path: fresh.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/fresh.jpg
+      description: "Fighting Bots at Scale: A fresh approach"
+  -
+    scope:
+      path: case1.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/bottle.jpg
+      description: "Case study 1: Bottlenecks in Traditional Data Partition Management"
+  -
+    scope:
+      path: case2.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/loading.jpg
+      description: "Case study 2: Optimizing Data Loading Workflows"
+  -
+    scope:
+      path: case3.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/windows.jpg
+      description: "Case study 3: Window Functions as a Bottleneck in Data Aggregation"
+  -
+    scope:
+      path: case4.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/footwear.jpg
+      description: "Case study 4: Transitioning from User Defined Functions to Scalable Spark-Based Solutions"
+  -
+    scope:
+      path: case5.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/pipes.jpg
+      description: "Case study 5: Reduction in DataFrame Operations"
+  -
+    scope:
+      path: perf.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/perf.jpg
+      description: "Fighting Bots at Scale: Key performance features"
+  -
+    scope:
+      path: background.md
+    values:
+      layout: default
+      image: https://denuvosoftwaresolutions.github.io/fighting-bots-at-scale/spark.jpg
+      description: "Fighting Bots at Scale: Background"
+
+header_pages:
+  -
+
+minima:
+  # generate social links in footer
+  social_links:
+    twitter: gamingatdenuvo
+    github:  denuvosoftwaresolutions
+    linkedincompany: denuvo-gmbh
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-remote-theme
+  - jekyll-optional-front-matter
