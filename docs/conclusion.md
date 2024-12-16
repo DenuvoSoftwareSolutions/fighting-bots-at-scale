@@ -1,6 +1,6 @@
 ![bot](bot-small.jpg)
 
-# Conclusion: A fair gaming environment needs a cutting-edge bot protection 
+# Conclusion: A Fair Gaming Environment Needs Cutting-Edge Bot Protection 
 
 Databricks, powered by Apache Spark, offers a robust platform for handling large-scale data workloads, 
 enabling organizations to process and analyze data with increased efficiency and scalability. However, 
@@ -39,4 +39,4 @@ Developers can also have access to graphical evidence in order to **visually ver
 out basic investigations in response to players’ complaints. This will help avoid false positives, 
 guaranteeing the highest effectiveness in bot detection and **ensuring a healthy gaming environment for players**.
 
-Contact as us [unbotify.com](https://unbotify.com).
+Contact us at [unbotify.com](https://unbotify.com).
