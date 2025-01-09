@@ -32,6 +32,22 @@ Our transition from a sequential UDF-based approach to a modular, Spark-based so
 our performance, surpassing our initial expectations. Below is again a detailed comparison for different data 
 volumes experiments:
 
+Table 6: Load test experiments
+|Data volume|Metric|Old logic|New logic|Improvement|
+|:---|:---|---:|---:|---:|
+|10 million|Total task runtime|15m 7s|8m 33s|43.45%|
+|	|Logic runtime|7m 9s|57s|86.71%
+|	|Databricks costs|$1.43|$0.76|46.85%|
+|	|AWS costs|$1.08|$0.21|80.56%|
+|100 million|Total task runtime|55m 46s|10m 31s|81.15%|
+|	|Logic runtime|29m 54s|1m 11s|96.04%|
+|	|Databricks costs|$8.79|$0.83|90.56%|
+|	|AWS costs|$9.13|$3.29|63.98%|
+|1 billion|Total task runtime|7h 24m|14m 32s|96.73%|
+|	|Logic runtime|4h 50m|3m 10s|98.91%|
+|	|Databricks costs|$119.41|$1.43|98.80%|
+|	|AWS costs|$101.69|$4.38|95.69%|
+
 These results demonstrate the significant performance and cost improvements we achieved through the refactored 
 approach. The new modular and distributed design not only reduces the logic runtime for larger data volumes by 
 up to 96% and 99% but also lowered operational costs by as much as 90% and 98% respectively. We were 

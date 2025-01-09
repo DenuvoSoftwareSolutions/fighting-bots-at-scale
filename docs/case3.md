@@ -104,4 +104,34 @@ The transition from row-based processing using window functions to array-based g
 substantial improvements in shuffle read and write volumes, as well as a reduction in memory and disk spills. 
 The following tables summarize the key metrics and provide a comparison between the two approaches.
 
+Table3: Window-based processing summary, (*) aborted halfway through
+|Metric|Active Executors|Dead Executors|Total Executors|
+|:---|---:|---:|---:|
+|Shuffle Read|5.5 TiB|189.7 GiB|5.7 TiB|
+|Shuffle Write|8.4 TiB|208.2 GiB|8.6 TiB|
+|Input Data|172.7 GiB|26.1 GiB|198.8 GiB|
+|Task Time (*)|116.8 h (21 min)|3.1 h (1.3 min)|119.9 h (22 min)|
+
+
+Table 4: Group-based processing summary, (*) aborted halfway through
+|Metric|Active Executors|Dead Executors|Total Executors|
+|:---|---:|---:|---:|
+|Shuffle Read|752.4 GiB|454.6 GiB|1.2 TiB|
+|Shuffle Write|751.1 GiB|455.9 GiB|1.2 TiB|
+|Input Data|240 GiB|164.2 GiB|404.3 GiB|
+|Task Time|133.5 h (2.2 h)|110.6 h (1.9 h)|244.2 h (4.1 h)|
+
+Table 5: Window-based summary for 200 tasks
+|Metric|Min|Median|Max|
+|:---|---:|---:|---:|
+|Duration|7.2 min|15 min|24 min|
+|Spill (memory)|44.1 GiB|58.5 GiB|62.1 GiB|
+|Spill (disk)|10.9 GiB|14.5 GiB|15.5 GiB|
+	
+The switch from window-based to group-based processing led to a significant reduction in shuffle volumes. Shuffle read decreased from 5.7 TiB
+to 1.2 TiB, indicating a 79% decrease (4.75x reduction). Similarly, shuffle write was reduced from 8.6 TiB to 1.2 TiB, marking an 86% decrease
+(7.17x reduction). These reductions highlight the improved efficiency in data partitioning and minimized inter-node data transfers.
+Furthermore, while window-based processing faced substantial memory and disk spills, with a median spill of 58.5 GiB for memory and 14.5 GiB
+for disk, no spilling was observed during group-based processing.
+
 On to the next [Case Study 4: Transitioning from User Defined Functions to Scalable Spark-Based Solutions](case4.md).

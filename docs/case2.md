@@ -106,6 +106,25 @@ workflow. By transitioning from the previous, monolithic pipeline to the distinc
 resource-efficient approach, we observed substantial gains across varying data volumes: 10 million (20 GB) and 
 100 million (200 GB) daily rows to be processed.
 
+Table 1: Performance and cost analysis for 10 millions rows
+|Metric|Old workflow|New workflow|Change|
+|:---|---:|---:|---:|
+|Runtime|6h 8m 57s|42m 19s|88.53%|
+|Databricks costs|$44.37|$6.26|85.89%|
+|AWS costs|$25.02|$10.88|56.51%|
+|Total costs|$69.39|$17.14|75.30%|
+
+In the case of processing 10 million daily rows, the new workflow reduced runtime by nearly 89% and total costs
+by over 75%, demonstrating the effectiveness of minimizing unnecessary reads/writes and optimizing resource
+allocation.
+
+Table2: Performance and cost analysis for 100 million rows
+|Metric|Old workflow|New workflow|Change|
+|:---|---:|---:|---:|
+|Runtime|12h 52m 41s|2h 22m 11s|81.60%|
+|Databricks costs|$361.40|$34.61|90.42%|
+|AWS costs|$166.47|$35.94|78.41%|
+|Total costs|$527.87|$70.55|86.63%|
 
 For the larger dataset of 100 million daily rows, the optimized workflow reduced runtime by approximately 82% 
 and overall costs by nearly 87%. These results emphasize the benefits of decoupling tasks and utilizing 
