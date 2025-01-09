@@ -107,6 +107,7 @@ resource-efficient approach, we observed substantial gains across varying data v
 100 million (200 GB) daily rows to be processed.
 
 Table 1: Performance and cost analysis for 10 millions rows
+
 |Metric|Old workflow|New workflow|Change|
 |:---|---:|---:|---:|
 |Runtime|6h 8m 57s|42m 19s|88.53%|
@@ -119,6 +120,7 @@ by over 75%, demonstrating the effectiveness of minimizing unnecessary reads/wri
 allocation.
 
 Table2: Performance and cost analysis for 100 million rows
+
 |Metric|Old workflow|New workflow|Change|
 |:---|---:|---:|---:|
 |Runtime|12h 52m 41s|2h 22m 11s|81.60%|
