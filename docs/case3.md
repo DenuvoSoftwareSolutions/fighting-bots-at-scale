@@ -105,6 +105,7 @@ substantial improvements in shuffle read and write volumes, as well as a reducti
 The following tables summarize the key metrics and provide a comparison between the two approaches.
 
 Table3: Window-based processing summary, (*) aborted halfway through
+
 |Metric|Active Executors|Dead Executors|Total Executors|
 |:---|---:|---:|---:|
 |Shuffle Read|5.5 TiB|189.7 GiB|5.7 TiB|
@@ -114,6 +115,7 @@ Table3: Window-based processing summary, (*) aborted halfway through
 
 
 Table 4: Group-based processing summary, (*) aborted halfway through
+
 |Metric|Active Executors|Dead Executors|Total Executors|
 |:---|---:|---:|---:|
 |Shuffle Read|752.4 GiB|454.6 GiB|1.2 TiB|
@@ -122,6 +124,7 @@ Table 4: Group-based processing summary, (*) aborted halfway through
 |Task Time|133.5 h (2.2 h)|110.6 h (1.9 h)|244.2 h (4.1 h)|
 
 Table 5: Window-based summary for 200 tasks
+
 |Metric|Min|Median|Max|
 |:---|---:|---:|---:|
 |Duration|7.2 min|15 min|24 min|

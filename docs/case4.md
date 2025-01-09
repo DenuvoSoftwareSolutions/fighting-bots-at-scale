@@ -33,6 +33,7 @@ our performance, surpassing our initial expectations. Below is again a detailed 
 volumes experiments:
 
 Table 6: Load test experiments
+
 |Data volume|Metric|Old logic|New logic|Improvement|
 |:---|:---|---:|---:|---:|
 |10 million|Total task runtime|15m 7s|8m 33s|43.45%|
