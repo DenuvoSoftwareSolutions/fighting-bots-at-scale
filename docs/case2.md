@@ -119,7 +119,7 @@ In the case of processing 10 million daily rows, the new workflow reduced runtim
 by over 75%, demonstrating the effectiveness of minimizing unnecessary reads/writes and optimizing resource
 allocation.
 
-Table2: Performance and cost analysis for 100 million rows
+Table 2: Performance and cost analysis for 100 million rows
 
 |Metric|Old workflow|New workflow|Change|
 |:---|---:|---:|---:|

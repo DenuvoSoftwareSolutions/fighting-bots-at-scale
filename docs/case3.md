@@ -104,7 +104,7 @@ The transition from row-based processing using window functions to array-based g
 substantial improvements in shuffle read and write volumes, as well as a reduction in memory and disk spills. 
 The following tables summarize the key metrics and provide a comparison between the two approaches.
 
-Table3: Window-based processing summary, (*) aborted halfway through
+Table 3: Window-based processing summary, (*) aborted halfway through
 
 |Metric|Active Executors|Dead Executors|Total Executors|
 |:---|---:|---:|---:|
